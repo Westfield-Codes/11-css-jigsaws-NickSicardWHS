@@ -12,8 +12,14 @@
     /* Add these styles in order */
      
     /* Center the title "High Factor Times Tables */
-
+#title {
+  text-align:center;
+}
     /* Display each table in a row with inline-block */
+#table {
+  border: 2px solid black;
+border-radius:20px
+}
     
     /* Put a rounded (20px) solid black border box around the timestables div */
 
@@ -45,11 +51,11 @@
   </div>
   <a href = "../index.html">Back Home</a>
   <div id="timestables">
-    <h2>High Factor Times Tables</h2>
+    <h2 id="title">High Factor Times Tables</h2>
     <ol id="tables">
       <li>
         <ol>
-          <li><h4>7</h4>
+          <li id="row1"><h4>7</h4>
           <li>7 X 7 = 49</li>
           <li>7 X 8 = 56</li>
           <li>7 X 9 = 63</li>
@@ -60,7 +66,7 @@
       </li>
       <li> 
           <ol>
-            <li><h4>8</h4>
+            <li id="row2"><h4>8</h4>
             <li>8 X 7 = 56</li>
             <li>8 X 8 = 64</li>
             <li>8 X 9 = 72</li>
