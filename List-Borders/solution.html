@@ -9,33 +9,59 @@
   <link href = "../style.css" rel = "stylesheet" type = "text/css" />
    <style>
 
-    /* Add these styles in order */
+    
      
     /* Center the title "High Factor Times Tables */
 #title {
   text-align:center;
 }
     /* Display each table in a row with inline-block */
-#table {
-  border: 2px solid black;
-border-radius:20px
+li {
+  display: inline-block;
+  padding-left:10px;
+  
 }
+/* Put a rounded (20px) solid black border box around the timestables div */
+    #timestables {
+      border:2px solid black;
+      border-radius:20px;
+      padding-bottom:25px;
+      width:800px;
+      height:700px;
+      margin:auto;
+  
+   
+    }
     
-    /* Put a rounded (20px) solid black border box around the timestables div */
 
     /* Put a rounded (10px) solid black border box around EACH times table */
-    
+      #tables ol {
+        border:2px solid black;
+        border-radius:10px;
+        padding-bottom:20px;
+        width:150px;
+        padding-left:40px;
+        padding-right:40px;
+        
+
+      }
+
     /* underline the top numbers red */
     
+h4 {
+ border-bottom: 2px solid red;
+}
+
     /* go night mode on hovers over each timestable, but not the parent  */
   
-    /* 20 px space below the last equation in each table */
 
-    /* add a top margin of 20px on each table, but not the parent */
+ #tables ol:hover {
+  border:solid black;
+  background-color:black;
+  color:white;
+ }
 
-     /* subtract 20px from left margins of each child table, add it to the right margins */
-
-    /* put 25px padding at the bottom of the parent  */
+ 
 
    </style>
 </head>
@@ -55,7 +81,7 @@ border-radius:20px
     <ol id="tables">
       <li>
         <ol>
-          <li id="row1"><h4>7</h4>
+          <li><h4>7</h4>
           <li>7 X 7 = 49</li>
           <li>7 X 8 = 56</li>
           <li>7 X 9 = 63</li>
@@ -66,7 +92,7 @@ border-radius:20px
       </li>
       <li> 
           <ol>
-            <li id="row2"><h4>8</h4>
+            <li><h4>8</h4>
             <li>8 X 7 = 56</li>
             <li>8 X 8 = 64</li>
             <li>8 X 9 = 72</li>
